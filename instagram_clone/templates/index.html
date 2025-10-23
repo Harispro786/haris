@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div id="auth-container">
+        <a href="/login">Login</a>
+        <a href="/signup">Sign Up</a>
+    </div>
+    <div id="app-container" style="display: none;">
+        <h1>Photo Feed</h1>
+        <div id="feed"></div>
+        <hr>
+        <h2>Upload a Photo</h2>
+        <input type="file" id="photo-input">
+        <button id="upload-btn">Upload</button>
+        <button id="logout-btn">Logout</button>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>
