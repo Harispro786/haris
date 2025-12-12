@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EBS Clone - Business Consultancy</title>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#0d121b] dark:text-white font-display overflow-x-hidden">
+<!-- Navbar -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md">
+<div class="px-4 md:px-10 py-3 flex items-center justify-between mx-auto max-w-7xl">
+<div class="flex items-center gap-4">
+<div class="size-8 text-primary">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_535)">
+<path clip-rule="evenodd" d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clippath id="clip0_6_535"><rect height="48" width="48"></rect></clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em] text-slate-900 dark:text-white">EBS Clone</h2>
+</div>
+<div class="hidden lg:flex items-center gap-9">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Insights</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary text-white text-sm font-bold shadow-md hover:bg-blue-700 transition-colors">
+<span class="truncate">Get a Quote</span>
+</button>
+<button class="lg:hidden p-2 text-slate-900 dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative w-full py-12 md:py-20 px-4 md:px-10">
+<div class="mx-auto max-w-7xl">
+<div class="flex flex-col-reverse lg:flex-row gap-12 items-center">
+<!-- Text Content -->
+<div class="flex-1 flex flex-col gap-6 text-left">
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-[-0.033em] text-slate-900 dark:text-white">
+                        Empowering Your Business Growth in the UAE
+                    </h1>
+<p class="text-base md:text-lg font-normal leading-relaxed text-slate-600 dark:text-slate-300 max-w-xl">
+                        Leading consultancy services for setup, accounting, and legal compliance. We simplify complex business processes so you can focus on success.
+                    </p>
+<div class="flex flex-wrap gap-3 mt-2">
+<button class="flex items-center justify-center rounded-lg h-12 px-8 bg-primary text-white text-base font-bold shadow-lg hover:bg-blue-700 transition-all hover:-translate-y-0.5">
+<span>Our Services</span>
+</button>
+<button class="flex items-center justify-center rounded-lg h-12 px-8 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 text-base font-bold hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">
+<span>Contact Us</span>
+</button>
+</div>
+</div>
+<!-- Image -->
+<div class="flex-1 w-full">
+<div class="w-full aspect-[4/3] rounded-2xl bg-center bg-cover shadow-2xl" data-alt="Modern corporate office interior with glass walls and professional atmosphere" style="background-image: url('assets/hero-image.jpg');"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="w-full px-4 md:px-10 pb-12">
+<div class="mx-auto max-w-7xl">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm">
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium uppercase tracking-wider">Experience</p>
+<p class="text-slate-900 dark:text-white text-3xl font-bold">10+ Years</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm">
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium uppercase tracking-wider">Happy Clients</p>
+<p class="text-slate-900 dark:text-white text-3xl font-bold">500+</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm">
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium uppercase tracking-wider">Projects</p>
+<p class="text-slate-900 dark:text-white text-3xl font-bold">1200+</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm">
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium uppercase tracking-wider">Awards</p>
+<p class="text-slate-900 dark:text-white text-3xl font-bold">25</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Features / Services Section -->
+<section class="w-full py-16 px-4 md:px-10 bg-white dark:bg-slate-900">
+<div class="mx-auto max-w-7xl">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
+<div class="max-w-2xl">
+<h2 class="text-primary font-bold text-sm tracking-widest uppercase mb-2">Our Expertise</h2>
+<h3 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white leading-tight">Comprehensive Business Solutions</h3>
+<p class="mt-4 text-slate-600 dark:text-slate-300 text-lg">From initial setup to ongoing compliance, we provide end-to-end support tailored to your specific industry needs.</p>
+</div>
+<button class="flex items-center justify-center rounded-lg h-10 px-6 border border-primary text-primary hover:bg-primary hover:text-white transition-colors text-sm font-bold">
+                    View All Services
+                </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Service Card 1 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-background-light dark:bg-slate-800 p-6 hover:border-primary dark:hover:border-primary transition-colors cursor-pointer">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">work</span>
+</div>
+<div>
+<h4 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Business Setup</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Streamlined company formation in mainland, free zones, and offshore locations.</p>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-background-light dark:bg-slate-800 p-6 hover:border-primary dark:hover:border-primary transition-colors cursor-pointer">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">calculate</span>
+</div>
+<div>
+<h4 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Accounting</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Accurate financial recording, bookkeeping and reporting to keep you compliant.</p>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-background-light dark:bg-slate-800 p-6 hover:border-primary dark:hover:border-primary transition-colors cursor-pointer">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">bar_chart</span>
+</div>
+<div>
+<h4 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Auditing</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Independent examination of financial information for transparency and trust.</p>
+</div>
+</div>
+<!-- Service Card 4 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-background-light dark:bg-slate-800 p-6 hover:border-primary dark:hover:border-primary transition-colors cursor-pointer">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">balance</span>
+</div>
+<div>
+<h4 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Legal Advisory</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Expert legal guidance to navigate the UAE's complex regulatory landscape.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Us Section -->
+<section class="w-full py-20 px-4 md:px-10">
+<div class="mx-auto max-w-7xl">
+<div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+<div class="flex-1 w-full">
+<div class="relative w-full aspect-video lg:aspect-square rounded-2xl bg-cover bg-center overflow-hidden shadow-2xl" data-alt="Team of business professionals discussing strategy in a modern meeting room" style="background-image: url('assets/about-us-image.jpg');">
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+</div>
+<div class="flex-1 flex flex-col gap-6">
+<h2 class="text-primary font-bold text-sm tracking-widest uppercase">About Us</h2>
+<h3 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white leading-tight">Your Trusted Partner in Dubai</h3>
+<p class="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
+                        We are more than just consultants; we are your strategic partners in growth. Established in 2013, our mission has been to simplify the complexities of business setup and management in the UAE.
+                    </p>
+<ul class="flex flex-col gap-3 mt-2">
+<li class="flex items-center gap-3 text-slate-700 dark:text-slate-200 font-medium">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                            Deep knowledge of UAE Free Zones
+                        </li>
+<li class="flex items-center gap-3 text-slate-700 dark:text-slate-200 font-medium">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                            Certified Financial Experts
+                        </li>
+<li class="flex items-center gap-3 text-slate-700 dark:text-slate-200 font-medium">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                            End-to-End Legal Compliance
+                        </li>
+</ul>
+<button class="mt-4 w-fit flex items-center justify-center rounded-lg h-12 px-8 bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-base font-bold hover:bg-slate-700 dark:hover:bg-slate-200 transition-colors">
+                        Learn More About Us
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="w-full py-20 px-4 md:px-10 bg-white dark:bg-slate-900">
+<div class="mx-auto max-w-7xl">
+<div class="text-center mb-16">
+<h2 class="text-primary font-bold text-sm tracking-widest uppercase mb-2">Testimonials</h2>
+<h3 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">What Our Clients Say</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="flex flex-col p-8 rounded-2xl bg-background-light dark:bg-slate-800 relative">
+<span class="material-symbols-outlined text-6xl text-primary/20 absolute top-6 right-6">format_quote</span>
+<p class="text-slate-600 dark:text-slate-300 text-lg leading-relaxed mb-6 italic relative z-10">
+                        "Professional and efficient service. They handled our entire company formation process in Dubai seamlessly. Highly recommended for any new business."
+                    </p>
+<div class="mt-auto flex items-center gap-4">
+<div class="size-12 rounded-full bg-slate-300 dark:bg-slate-600 overflow-hidden">
+<img alt="Portrait of John Doe" data-alt="Portrait of a professional man in a suit" src="assets/testimonial-1.jpg"/>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-white">John Doe</p>
+<p class="text-sm text-slate-500">CEO, TechStart FZCO</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="flex flex-col p-8 rounded-2xl bg-background-light dark:bg-slate-800 relative">
+<span class="material-symbols-outlined text-6xl text-primary/20 absolute top-6 right-6">format_quote</span>
+<p class="text-slate-600 dark:text-slate-300 text-lg leading-relaxed mb-6 italic relative z-10">
+                        "The accounting team is exceptional. They ensure we are always compliant with VAT regulations and provide insightful financial reports monthly."
+                    </p>
+<div class="mt-auto flex items-center gap-4">
+<div class="size-12 rounded-full bg-slate-300 dark:bg-slate-600 overflow-hidden">
+<img alt="Portrait of Sarah Smith" data-alt="Portrait of a professional woman in business attire" src="assets/testimonial-2.jpg"/>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-white">Sarah Smith</p>
+<p class="text-sm text-slate-500">Director, Creative Agency</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="flex flex-col p-8 rounded-2xl bg-background-light dark:bg-slate-800 relative">
+<span class="material-symbols-outlined text-6xl text-primary/20 absolute top-6 right-6">format_quote</span>
+<p class="text-slate-600 dark:text-slate-300 text-lg leading-relaxed mb-6 italic relative z-10">
+                        "Their legal advisory services saved us from potential pitfalls during our expansion. A truly knowledgeable team that cares about your success."
+                    </p>
+<div class="mt-auto flex items-center gap-4">
+<div class="size-12 rounded-full bg-slate-300 dark:bg-slate-600 overflow-hidden">
+<img alt="Portrait of Michael Brown" data-alt="Portrait of a senior business executive" src="assets/testimonial-3.jpg"/>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-white">Michael Brown</p>
+<p class="text-sm text-slate-500">Founder, BuildRight Ltd</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full bg-slate-900 dark:bg-black text-white py-16 px-4 md:px-10 border-t border-slate-800">
+<div class="mx-auto max-w-7xl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+<!-- Brand Info -->
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<div class="size-6 text-primary">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_footer)">
+<path clip-rule="evenodd" d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clippath id="clip0_footer"><rect height="48" width="48"></rect></clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-xl font-bold">EBS Clone</h2>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed">
+                        Your trusted partner for business setup, accounting, and legal services in the UAE. Empowering growth since 2013.
+                    </p>
+</div>
+<!-- Quick Links -->
+<div class="flex flex-col gap-4">
+<h4 class="text-lg font-bold">Quick Links</h4>
+<ul class="flex flex-col gap-2 text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Home</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Our Services</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Insights &amp; Blog</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+<!-- Contact Info -->
+<div class="flex flex-col gap-4">
+<h4 class="text-lg font-bold">Contact Us</h4>
+<ul class="flex flex-col gap-3 text-slate-400">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl">location_on</span>
+<span>Office 101, Business Bay,<br/>Dubai, UAE</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">call</span>
+<span>+971 4 123 4567</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">mail</span>
+<span>info@ebsclone.ae</span>
+</li>
+</ul>
+</div>
+<!-- Newsletter -->
+<div class="flex flex-col gap-4">
+<h4 class="text-lg font-bold">Stay Updated</h4>
+<p class="text-slate-400 text-sm">Subscribe to our newsletter for the latest business insights.</p>
+<div class="flex flex-col gap-3">
+<input class="w-full h-10 px-4 rounded bg-slate-800 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-primary" placeholder="Enter your email" type="email"/>
+<button class="w-full h-10 rounded bg-primary text-white font-bold hover:bg-blue-600 transition-colors">
+                            Subscribe
+                        </button>
+</div>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+<p>© 2023 EBS Clone. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script src="script.js"></script>
+</body></html>
